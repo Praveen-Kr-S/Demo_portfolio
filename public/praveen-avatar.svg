@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGrad" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#142338" />
+      <stop offset="45%" stop-color="#0b1422" />
+      <stop offset="100%" stop-color="#05080f" />
+    </radialGradient>
+    
+    <!-- Bokeh circles -->
+    <radialGradient id="bokeh1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="bokeh2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="bokeh3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Face Gradients -->
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c98a63" />
+      <stop offset="40%" stop-color="#b6754e" />
+      <stop offset="85%" stop-color="#9a5a35" />
+      <stop offset="100%" stop-color="#7a4224" />
+    </linearGradient>
+
+    <linearGradient id="foreheadTone" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#d69670" />
+      <stop offset="100%" stop-color="#ba7a53" />
+    </linearGradient>
+
+    <!-- Suit & Clothes -->
+    <linearGradient id="suitGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1f242e" />
+      <stop offset="50%" stop-color="#121620" />
+      <stop offset="100%" stop-color="#0a0d13" />
+    </linearGradient>
+    <linearGradient id="lapelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#282f3d" />
+      <stop offset="100%" stop-color="#141822" />
+    </linearGradient>
+
+    <!-- Tie pattern -->
+    <linearGradient id="tieBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a303c" />
+      <stop offset="100%" stop-color="#11141a" />
+    </linearGradient>
+
+    <!-- Glasses Metallic Rim -->
+    <linearGradient id="glassesRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2b188" />
+      <stop offset="40%" stop-color="#7a4c28" />
+      <stop offset="80%" stop-color="#3b2012" />
+      <stop offset="100%" stop-color="#c89366" />
+    </linearGradient>
+
+    <!-- Lens Reflection -->
+    <linearGradient id="lensReflect" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.3" />
+      <stop offset="45%" stop-color="#a78bfa" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Lighting Filters -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Bokeh Background -->
+  <rect width="800" height="800" fill="url(#bgGrad)" />
+
+  <!-- Bokeh Orb Highlights -->
+  <circle cx="200" cy="180" r="110" fill="url(#bokeh1)" />
+  <circle cx="640" cy="220" r="130" fill="url(#bokeh3)" />
+  <circle cx="120" cy="380" r="85" fill="url(#bokeh2)" />
+  <circle cx="700" cy="450" r="95" fill="url(#bokeh1)" />
+  <circle cx="280" cy="100" r="70" fill="url(#bokeh2)" />
+  <circle cx="560" cy="120" r="60" fill="url(#bokeh1)" />
+
+  <!-- Subtle Math & Network Constellation (Integrals & Pi nodes from portrait) -->
+  <g stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.28" fill="none">
+    <path d="M 680 240 L 720 280 L 670 340 L 730 400 L 680 460" />
+    <path d="M 720 280 L 640 310 L 670 340" />
+    <circle cx="680" cy="240" r="3.5" fill="#38bdf8" fill-opacity="0.6" />
+    <circle cx="720" cy="280" r="4.5" fill="#38bdf8" fill-opacity="0.8" />
+    <circle cx="670" cy="340" r="3.5" fill="#38bdf8" fill-opacity="0.6" />
+    <circle cx="730" cy="400" r="4" fill="#38bdf8" fill-opacity="0.7" />
+    <circle cx="640" cy="310" r="3" fill="#38bdf8" fill-opacity="0.5" />
+    <!-- Integral symbol on left -->
+    <path d="M 170 310 C 160 280 175 250 185 240 C 195 230 190 220 180 220" stroke-width="2" stroke-opacity="0.22" />
+    <path d="M 170 310 C 180 340 165 370 155 380 C 145 390 150 400 160 400" stroke-width="2" stroke-opacity="0.22" />
+    <!-- Pi symbol on right -->
+    <path d="M 690 380 L 740 380 M 705 380 L 705 430 M 730 380 L 730 425 C 730 432 735 435 742 435" stroke-width="2" stroke-opacity="0.22" />
+  </g>
+
+  <!-- Suit Body & Shoulders -->
+  <g id="suit">
+    <!-- Back Collar Shadow -->
+    <path d="M 290 620 L 510 620 L 520 700 L 280 700 Z" fill="#0a0d13" />
+
+    <!-- Main Jacket Body -->
+    <path d="M 120 800 C 130 680 230 580 350 565 L 450 565 C 570 580 670 680 680 800 Z" fill="url(#suitGrad)" />
+
+    <!-- Crisp White Shirt Collar Points -->
+    <path d="M 335 530 L 400 680 L 360 690 L 300 560 Z" fill="#f8fafc" />
+    <path d="M 465 530 L 400 680 L 440 690 L 500 560 Z" fill="#f8fafc" />
+    <!-- Shirt Inner Neck Band -->
+    <path d="M 345 520 Q 400 535 455 520 L 465 540 Q 400 555 335 540 Z" fill="#e2e8f0" />
+
+    <!-- Tie & Tie Knot -->
+    <!-- Knot -->
+    <path d="M 380 540 L 420 540 L 428 605 L 372 605 Z" fill="url(#tieBase)" stroke="#11141a" stroke-width="1" />
+    <!-- Tie Body -->
+    <path d="M 372 605 L 428 605 L 442 800 L 358 800 Z" fill="url(#tieBase)" />
+    <!-- Diagonal Tie Stripes -->
+    <g stroke="#94a3b8" stroke-width="3" stroke-opacity="0.5" stroke-linecap="round">
+      <line x1="375" y1="560" x2="415" y2="595" />
+      <line x1="370" y1="620" x2="425" y2="670" />
+      <line x1="368" y1="655" x2="432" y2="710" />
+      <line x1="365" y1="695" x2="436" y2="750" />
+      <line x1="363" y1="735" x2="439" y2="790" />
+      <line x1="360" y1="775" x2="442" y2="830" />
+    </g>
+
+    <!-- Suit Lapels (Left and Right) -->
+    <!-- Left Lapel -->
+    <path d="M 250 630 L 350 565 L 390 680 L 340 760 L 220 800 Z" fill="url(#lapelGrad)" stroke="#222836" stroke-width="1.5" />
+    <!-- Right Lapel -->
+    <path d="M 550 630 L 450 565 L 410 680 L 460 760 L 580 800 Z" fill="url(#lapelGrad)" stroke="#222836" stroke-width="1.5" />
+
+    <!-- Sparkle star on lower right lapel -->
+    <g transform="translate(530, 680)" fill="#94a3b8" fill-opacity="0.45">
+      <path d="M 0 -12 Q 0 0 12 0 Q 0 0 0 12 Q 0 0 -12 0 Q 0 0 0 -12 Z" />
+    </g>
+  </g>
+
+  <!-- Neck -->
+  <g id="neck">
+    <path d="M 350 440 L 450 440 L 460 550 Q 400 570 340 550 Z" fill="url(#skinTone)" />
+    <!-- Neck shadow under chin -->
+    <path d="M 350 440 Q 400 480 450 440 L 455 490 Q 400 520 345 490 Z" fill="#663419" fill-opacity="0.45" />
+  </g>
+
+  <!-- Head & Facial Features -->
+  <g id="head">
+    <!-- Ears -->
+    <!-- Left Ear -->
+    <path d="M 285 300 C 265 300 260 360 280 395 C 285 405 295 400 295 380 Z" fill="#ba7a53" stroke="#8c4e2a" stroke-width="1" />
+    <path d="M 280 325 C 272 340 274 370 285 380" stroke="#7a4224" stroke-width="2" fill="none" />
+    <!-- Right Ear -->
+    <path d="M 515 300 C 535 300 540 360 520 395 C 515 405 505 400 505 380 Z" fill="#ba7a53" stroke="#8c4e2a" stroke-width="1" />
+    <path d="M 520 325 C 528 340 526 370 515 380" stroke="#7a4224" stroke-width="2" fill="none" />
+
+    <!-- Head Shape -->
+    <path d="M 290 280 C 285 190 330 145 400 145 C 470 145 515 190 510 280 C 508 340 500 420 460 470 C 430 500 370 500 340 470 C 300 420 292 340 290 280 Z" fill="url(#skinTone)" />
+
+    <!-- Forehead Highlight -->
+    <ellipse cx="400" cy="240" rx="90" ry="60" fill="url(#foreheadTone)" opacity="0.6" />
+
+    <!-- Cheeks Soft Tone -->
+    <ellipse cx="340" cy="360" rx="40" ry="25" fill="#d9895f" opacity="0.3" />
+    <ellipse cx="460" cy="360" rx="40" ry="25" fill="#d9895f" opacity="0.3" />
+
+    <!-- Hair (Dark, styled, side texture) -->
+    <path d="M 282 275 C 280 200 300 135 375 125 C 425 118 480 125 505 160 C 522 185 524 235 520 275 C 510 260 495 240 475 225 C 430 195 360 200 310 235 C 295 250 288 265 282 275 Z" fill="#15171c" />
+    <!-- Hair Volume Top -->
+    <path d="M 305 180 C 320 140 370 120 420 120 C 470 120 500 140 515 175 C 500 150 450 135 410 135 C 360 135 325 155 305 180 Z" fill="#252a33" />
+
+    <!-- Eyebrows -->
+    <path d="M 320 275 Q 355 260 380 272" stroke="#16181d" stroke-width="7" stroke-linecap="round" fill="none" />
+    <path d="M 480 275 Q 445 260 420 272" stroke="#16181d" stroke-width="7" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes -->
+    <!-- Left Eye -->
+    <g id="leftEye">
+      <ellipse cx="350" cy="305" rx="20" ry="12" fill="#ffffff" />
+      <circle cx="350" cy="305" r="9.5" fill="#2a1810" />
+      <circle cx="350" cy="305" r="5" fill="#0a0705" />
+      <circle cx="347" cy="302" r="2.5" fill="#ffffff" />
+      <path d="M 328 304 Q 350 292 372 304" stroke="#4a2612" stroke-width="2.5" fill="none" />
+    </g>
+    <!-- Right Eye -->
+    <g id="rightEye">
+      <ellipse cx="450" cy="305" rx="20" ry="12" fill="#ffffff" />
+      <circle cx="450" cy="305" r="9.5" fill="#2a1810" />
+      <circle cx="450" cy="305" r="5" fill="#0a0705" />
+      <circle cx="447" cy="302" r="2.5" fill="#ffffff" />
+      <path d="M 428 304 Q 450 292 472 304" stroke="#4a2612" stroke-width="2.5" fill="none" />
+    </g>
+
+    <!-- Nose -->
+    <path d="M 395 285 L 393 345 Q 391 360 400 365 Q 409 360 407 345 L 405 285" fill="none" stroke="#8a4b27" stroke-width="1.5" stroke-linecap="round" />
+    <!-- Nostrils -->
+    <path d="M 382 360 C 388 355 398 368 400 368 C 402 368 412 355 418 360" stroke="#683416" stroke-width="3" fill="none" stroke-linecap="round" />
+
+    <!-- Distinctive Round Glasses -->
+    <g id="glasses">
+      <!-- Left Round Frame -->
+      <circle cx="348" cy="306" r="42" fill="url(#lensReflect)" stroke="url(#glassesRim)" stroke-width="5" />
+      <circle cx="348" cy="306" r="39" fill="none" stroke="#23170e" stroke-width="1.8" />
+      <!-- Left Glass Glint -->
+      <path d="M 320 285 A 36 36 0 0 1 365 275" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.6" fill="none" />
+
+      <!-- Right Round Frame -->
+      <circle cx="452" cy="306" r="42" fill="url(#lensReflect)" stroke="url(#glassesRim)" stroke-width="5" />
+      <circle cx="452" cy="306" r="39" fill="none" stroke="#23170e" stroke-width="1.8" />
+      <!-- Right Glass Glint -->
+      <path d="M 424 285 A 36 36 0 0 1 469 275" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.6" fill="none" />
+
+      <!-- Bridge between frames -->
+      <path d="M 390 298 Q 400 293 410 298" stroke="url(#glassesRim)" stroke-width="5" fill="none" stroke-linecap="round" />
+
+      <!-- Frame Temple Extensions to ears -->
+      <path d="M 306 302 L 285 315" stroke="url(#glassesRim)" stroke-width="4" stroke-linecap="round" />
+      <path d="M 494 302 L 515 315" stroke="url(#glassesRim)" stroke-width="4" stroke-linecap="round" />
+    </g>
+
+    <!-- Mustache & Short Trimmed Beard -->
+    <!-- Mustache -->
+    <g id="mustache" fill="#171920">
+      <path d="M 368 402 Q 385 390 400 398 Q 415 390 432 402 Q 418 416 400 408 Q 382 416 368 402 Z" />
+    </g>
+
+    <!-- Lips -->
+    <path d="M 374 418 Q 400 414 426 418" stroke="#874327" stroke-width="3" fill="none" stroke-linecap="round" />
+    <path d="M 378 424 Q 400 434 422 424" stroke="#66301a" stroke-width="2" fill="none" stroke-linecap="round" />
+
+    <!-- Beard Stubble Along Jawline and Chin -->
+    <path d="M 315 385 C 325 435 355 480 400 488 C 445 480 475 435 485 385 C 478 430 445 470 400 475 C 355 470 322 430 315 385 Z" fill="#16181f" opacity="0.65" />
+    <!-- Chin Beard Patch -->
+    <path d="M 388 442 Q 400 438 412 442 Q 409 465 400 470 Q 391 465 388 442 Z" fill="#171920" opacity="0.8" />
+  </g>
+</svg>
